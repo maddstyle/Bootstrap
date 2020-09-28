@@ -1,0 +1,33 @@
+.container{
+  background-color: #957bbe;
+  border-radius: .70rem;
+  margin-top: 20px;
+}
+
+.container-fluid{
+  background-color: #7bbebb;
+  border-radius: .70rem;
+}
+
+.row{
+  background-color: #bea37b;
+  border-radius: .70rem;
+}
+
+.col, .col-, .col-sm, .cole-md, .col-lg, .cole.xl,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12
+{
+  background-color: #be7bbe;
+  border-radius: .70rem;
+}
