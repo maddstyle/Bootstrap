@@ -1,4 +1,4 @@
-.container{
+/* .container{
   background-color: #957bbe;
   border-radius: .70rem;
   margin-top: 20px;
@@ -12,9 +12,9 @@
 .row{
   background-color: #bea37b;
   border-radius: .70rem;
-}
+} */
 
-.col, .col-, .col-sm, .cole-md, .col-lg, .cole.xl,
+/* .col, .col-, .col-sm, .cole-md, .col-lg, .cole.xl,
 .col-1,
 .col-2,
 .col-3,
@@ -31,3 +31,23 @@
   background-color: #be7bbe;
   border-radius: .70rem;
 }
+
+.menu li{
+  display: inline-block;
+}
+
+@media (min-width: 768px){
+  .menu li{
+    display: list-item;
+  }
+} */
+
+.headline-size {
+  font-size: 2em;
+}
+
+dt {
+  line-height: 2em;
+}
+
+@media (max-width: 7)
