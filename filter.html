@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Budgeting App</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<!-- <img src="/images/somepicture.png" width="30" height="30"
+					alt="example how to put picture/logo next to brand link"> -->
+				BudgetApp
+			</a>
+			<button class="navbar-toggler" type="button" data-target:="#navigationId">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigationId">
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Add income/expense<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Overview</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Filter</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container mt-5">
+		<h2>Filter</h2>
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-3">
+					<label for="type">Type</label>
+					<select id="type" class="form-control">
+						<option selected>select...</option>
+						<option value="income">income</option>
+						<option value="expense">expenses</option>
+					</select>
+				</div>
+
+				<div class="form-group col-md-4">
+					<label for="category">Category</label>
+					<select id="category" class="form-control">
+						<option selected>select...</option>
+						<option value="1">regular income</option>
+						<option value="2">regular expense</option>
+						<option value="3">clothing</option>
+						<option value="4">food</option>
+						<option value="5">others</option>
+					</select>
+				</div>
+
+				<div class="form-group col-md-3">
+					<label for="price">Price</label>
+					<select id="price" class="form-control">
+						<option selected>select...</option>
+						<option>from lowest up</option>
+						<option>from highest down</option>
+					</select>
+				</div>
+
+				<div class="form-group col-md-2">
+					<label for="year">Year</label>
+					<select id="year" class="form-control">
+						<option selected>select...</option>
+						<option>2020</option>
+						<option>2019</option>
+						<option>2018</option>
+					</select>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Filter</button>
+		</form>
+	</div>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Date</th>
+								<th scope="col">Item</th>
+								<th scope="col">Category</th>
+								<th scope="col">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-danger">
+								<th scope="row">01/01</th>
+								<td><a href="#">tv payment</a></td>
+								<td>loans</td>
+								<td class="text-danger">100</td>
+							</tr>
+							<tr class="table-danger">
+								<th scope="row">01/14</th>
+								<td><a href="#">new t-shirt</a></td>
+								<td>clothing</td>
+								<td class="text-danger">14.99</td>
+							</tr>
+							<tr class="table-success">
+								<th scope="row">01/15</th>
+								<td><a href="#">Salary</a></td>
+								<td>regular incomes</td>
+								<td class="text-success">690</td>
+							</tr>
+							<tr class="table-success">
+								<th scope="row">01/15</th>
+								<td><a href="#">bonus</a></td>
+								<td>extra incomes</td>
+								<td class="text-success">54</td>
+							</tr>
+							<tr class="table-success">
+								<th scope="row">01/17</th>
+								<td><a href="#">gift</a></td>
+								<td>extra incomes</td>
+								<td class="text-success">20</td>
+							</tr>
+							<tr class="table-danger">
+								<th scope="row">01/19</th>
+								<td><a href="#">gift</a></td>
+								<td>gifts</td>
+								<td class="text-danger">50</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="margin-top: 100px; background-color: #e3f2fd; padding: 20px 0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<footer>Income & Expenses - get it under control! Since 2020.</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- You can use this inline styling to give your page scrolling property -->
+		<!-- <div style="line-height: 2000px;"></div> -->
+
+		<!-- Optional JavaScript
+  jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+		<script src="/graphs.js"></script>
+</body>
+
+</html>
